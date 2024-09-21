@@ -20,7 +20,7 @@ function outer() {
 _____________example___________________
 
 function makeFunc() {
-  const name = "Mozilla";
+  const name = "Hello";
   function displayName() {
     console.log(name);
   }
@@ -33,6 +33,7 @@ myFunc();
 
 __________IN_realworld ________________________
 
+-------first all of this make two buttons in html-----------'x
 
 function clickHandler(color){
   return function(){
