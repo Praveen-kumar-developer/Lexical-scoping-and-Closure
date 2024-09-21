@@ -1,1 +1,55 @@
-hello every one
+# Lexical-scoping-and-Closure
+
+
+________example 1 ____________
+
+_______________________ Lexical-scopin_________________
+
+function outer() {  
+  let username = "Mr praveen kumar";
+  function inner() {
+    console.log("inner", username);
+  }
+  inner();
+}
+ outer();
+
+
+ __________________________Closure__________________________
+
+_____________example___________________
+
+function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+
+
+__________IN_realworld ________________________
+
+
+function clickHandler(color){
+  return function(){
+    document.body.style.background = `${color}`
+  }
+}
+
+document.querySelector(".orange").addEventListener("click", clickHandler("orange"))
+document.querySelector(".green").addEventListener("click", clickHandler("green"))
+
+
+
+
+
+
+
+
+
+
+
